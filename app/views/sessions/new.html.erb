@@ -1,0 +1,8 @@
+Log in
+<%= form_for User.new, :url => "signin" do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.submit "Sign In" %>
+<% end %>
